@@ -1,0 +1,43 @@
+#container {
+    place-items: center;
+    width: 50%;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-rows: 1fr 2fr;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    position: absolute;
+    left: 20%;
+    font-family: Helvetica;
+    font-size: 25px;
+}
+
+#header {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 3fr 1fr;
+    height: 50%;
+    grid-template-areas: "i b";
+    align-items: center;
+    justify-items: center;
+}
+
+input {
+    grid-area: i;
+    font-size: 15px;
+    width: 30vw;
+    height: 5vh;
+}
+
+button {
+    grid-area: b;
+    cursor: pointer;
+    width: 10vw;
+    height: 5vh;
+}
+
+.results {
+    white-space: pre-wrap;
+    font-size: 15px;
+}
